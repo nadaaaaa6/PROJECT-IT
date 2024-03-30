@@ -1,0 +1,74 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/general.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Sign In</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link nav-cta" href="../index.html">Home</a></li>
+          <li><a class="main-nav-link" href="Advice.html">Advice</a></li>
+          <li><a class="main-nav-link" href="Sign Up.html">Sign Up</a></li>
+          <li><a class="main-nav-link" href="Contact Us.html">Contact Us</a></li>
+          <li><a class="main-nav-link" href="About Us.html">About Us</a></li>
+
+        </ul>
+      </nav>
+    
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Sign In</h2>
+            <form class="cta-form" action="#" >
+              <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="email@gmail.com"
+                    required
+                  />
+                </div>
+
+              <div>
+                <label for="password">password</label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="password"
+                  required
+                />
+              </div>
+              <input  id="btn--form" type="submit" value="Sign In">
+                </form>
+            </div>
+      </section>
+</body>

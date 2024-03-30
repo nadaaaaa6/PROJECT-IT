@@ -1,0 +1,103 @@
+/* Variables */
+:root {
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --text-secondary-color: #666;
+    --max-width: 800px;
+    --margin: 0 auto;
+    --heading-font-size: 2.5rem;
+    --paragraph-font-size: 1.2rem;
+    --paragraph-line-height: 1.6;
+  }
+  /* Section Styling */
+#team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 50px 0;
+  }
+  
+  /* Wrapper Styling */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-width);
+    margin: var(--margin);
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  h2.container.center-text {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+  h1.container.center-text {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: var(--text-color);
+  }
+  
+  /* Paragraph Styling */
+  .team__paragraph {
+    font-size: var(--paragraph-font-size);
+    line-height: var(--paragraph-line-height);
+    color: var(--text-secondary-color);
+  }
+  
+
+@media all and (min-width: 768px) {
+    #team {
+        padding-top: 0;
+    }
+
+    #team .team__paragraph {
+        opacity: 0.67;
+        padding-bottom: 1.875rem;
+    }
+    .sw__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+    .sw__content .sw__content--item {
+        width: 50%;
+        padding-top: .9375rem;
+        padding-bottom: 3.75rem;
+    }
+    .sw__content .sw__content--item:first-child {
+        margin-right: 1.875rem;
+    }
+    .sw__content .sw__content--item .sw__title {
+        padding-bottom: .9375rem;
+    }
+    .claim__section {
+        max-width: 27.5625rem;
+        height: 5rem;
+        left: 2.875rem;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 0;
+    }
+    .claim__section .claim__title {
+        margin: .9375rem 1.875rem;
+    }
+    .hero-contact__image {
+        height: 18.75rem;
+    }
+    .wrapper {
+        margin: 0 2.8125rem;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #header .wrapper {
+        margin: 0;
+    }
+}
